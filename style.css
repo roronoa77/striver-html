@@ -1,0 +1,21 @@
+.style {
+  display: grid;
+  align-items: center;
+  background-color: hsl(var(--theme-hs), 5%);
+  padding-inline: max(5vw, 2rem) 3rem;
+  font-size: 1.35rem;
+  overflow-y: hidden;
+  resize: horizontal;
+}
+
+style {
+  display: block;
+  outline: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  color: hsl(var(--theme-hs), 85%);
+  background: none;
+  white-space: pre;
+  line-height: 1.65;
+  tab-size: 2;
+  hyphens: none;
+}
