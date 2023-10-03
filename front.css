@@ -1,0 +1,27 @@
+.demo {
+  padding: 2rem;
+}
+
+.box {
+  background-color: hsl(var(--theme-hs), 85%);
+  border: 2px dashed;
+  border-radius: .5em;
+  padding: 1rem;
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+.slide::before {
+  content: counter(slides);
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: 1.65em;
+  height: 1.65em;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: hsl(var(--theme-hs), 95%);
+  background-color: hsl(var(--theme-hs), 55%);
+}
