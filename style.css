@@ -19,3 +19,18 @@ style {
   tab-size: 2;
   hyphens: none;
 }
+h1 {
+  font-size: clamp(2rem, 8vw + 1rem, 3.25rem);
+}
+
+.content {
+  /* remove max-width rule from here */
+  width: calc(100vw - 2rem);
+}
+
+@media screen and (min-width: 120ch) {
+  .content {
+    width: unset;
+    max-width: 45ch;
+  }
+}
